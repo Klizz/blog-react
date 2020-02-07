@@ -3,6 +3,8 @@ import BlogPost from "./components/BlogPost";
 import MainBlog from "./components/MainBlog";
 import Footer from "../src/components/Footer";
 import Navbar from "../src/components/Navbar";
+import ShowGreeting from "./components/Greeting";
+import ShowDate from "./components/ShowDate";
 import "./materialize/css/materialize.css";
 
 function App() {
@@ -10,6 +12,8 @@ function App() {
     <div>
       <Navbar />
       <div className="container">
+        <ShowDate />
+        <ShowGreeting />
         <MainBlog
           image={
             <img
@@ -21,13 +25,16 @@ function App() {
           title="Seven female scientists you may not have heard of - but should know about"
           author="Deborah A. Hughes"
           post="Teach First has launched the STEMinism camapign, calling to close gender gaps in science and maths careers.
-          It says no female scientists were mentioned in the GCSE science curriculum, while just two - 
-          DNA pioneer Rosalind Franklin and paleoanthropologist Mary Leakey - were referred to in three double science GCSE specifications from 
+          It says no female scientists were mentioned in the GCSE science curriculum, while just two were referred to in three double science GCSE specifications from 
           the major exam boards. In comparison, more than 40 male scientists or their discoveries were mentioned."
         />
 
         <div className="row">
-          <h5><a href="/" className="pink-text text-darken-2">Tech ></a> </h5>
+          <h5>
+            <a href="/" className="pink-text text-darken-2">
+              Tech >
+            </a>{" "}
+          </h5>
           <div class="col s12 m4">
             <BlogPost
               image={
@@ -73,7 +80,11 @@ function App() {
         </div>
 
         <div className="row">
-        <h5><a href="/" className="pink-text text-darken-2">Internet ></a> </h5>
+          <h5>
+            <a href="/" className="pink-text text-darken-2">
+              Internet >
+            </a>{" "}
+          </h5>
           <div class="col s12 m4">
             <BlogPost
               image={
@@ -120,7 +131,11 @@ function App() {
         </div>
 
         <div className="row">
-        <h5><a href="/" className="pink-text text-darken-2">Science ></a> </h5>
+          <h5>
+            <a href="/" className="pink-text text-darken-2">
+              Science >
+            </a>{" "}
+          </h5>
           <div class="col s12 m4">
             <BlogPost
               image={
@@ -164,7 +179,6 @@ function App() {
             />
           </div>
         </div>
-
       </div>
       <Footer />
     </div>

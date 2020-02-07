@@ -7,13 +7,13 @@ function Navbar() {
         <a href="/" class="brand-logo">Blog</a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li>
-            <a href="sass.html">Services</a>
+            <a href="sass.html">Servicios</a>
           </li>
           <li>
-            <a href="badges.html">About us</a>
+            <a href="badges.html">Acerca de</a>
           </li>
           <li>
-            <a href="collapsible.html">Contact</a>
+            <a href="collapsible.html">Contacto</a>
           </li>
         </ul>
       </div>
