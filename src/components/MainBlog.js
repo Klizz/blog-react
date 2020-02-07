@@ -12,8 +12,8 @@ function MainBlog(props) {
       {props.image}
       </div>
       <div className="col s6 m6">
-        <h1>Hola</h1>
-        <p>blog post</p>
+        <h4> { props.title } </h4>
+        <p> {props.post} </p>
       </div>
     </div>
   );
